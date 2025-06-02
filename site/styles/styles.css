@@ -1,12 +1,4 @@
-:root{
-  --azulheader: #2482C2;
-  --azulnav: #176FAC;
-  --azulnav2: #1a6091;
-  --azulhover: #135c90;
-  --branco: #e8e8e8;
-  --amarelo: #DBD300;
-  --preto: #000000:
-}
+@import url('cores.css');
 
 * {
   margin: 0;
@@ -17,6 +9,35 @@
 body{
   font-family: "Cal Sans", sans-serif;
   background-color: var(--branco);
+}
+
+/* Footer */
+footer{
+  display: flex;
+  background-color: var(--azulheader);
+  padding: 10px 20px;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  border-top: solid 3px var(--amarelo);
+  min-height: 50px;
+}
+
+.logo-footer{
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+footer p{
+  display: flex;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--branco);
+  white-space: nowrap;
+  font-size: small;
 }
 
 /* Header e Nav */
@@ -56,10 +77,31 @@ header{
     .pesquisa-mobile{
       display: none;
     }
-  }
 
   /* Botão Login/Cadastro */
-  
+    .login-cadastro{
+      display: flex;
+      gap: 7px;
+    }
+
+    .login-cadastro a{
+      border-radius: 17px;
+      background-color: var(--azulbotao);
+      padding: 5px;
+      padding-right: 10px;
+      box-shadow: 0px 0px 2px var(--azulbotao);
+      text-decoration: none;
+      color: var(--branco);
+      display: inline;
+      align-items: center;
+      gap: 2px;
+    }
+
+    .login-cadastro a:hover{
+      background-color: var(--azulbotaohover);
+      transition: background-color 0.4s ease, color 0.4s ease, transform 0.4s ease;
+    }
+  }
 
   /* Menu Desktop */
   nav{
@@ -114,7 +156,8 @@ header{
     right: 20px;
     background: var(--azulnav2);
     border-radius: 15px;
-    box-shadow: 0px 0px 2px var(--azulnav2);
+    border: 3px solid var(--branco);
+    box-shadow: 0px 0px 3px var(--azulnav2);
     padding: 10px;
     z-index: 100;
     gap: 3px;
@@ -131,11 +174,11 @@ header{
     border-bottom: var(--branco) 1px solid;
   }
 
-  .menu-mobile a:last-child {
-    border-bottom: none;
-  }
-
   @media screen and (max-width: 768px) {
+    .logo-footer{
+      display: none;
+    }
+
     header .pesquisa{
       display: none;
     }
@@ -161,12 +204,42 @@ header{
       display: flex;
       left: 50%;
       transform: translateX(-50%);
-      
     }
 
     .pesquisa-mobile input[type="text"]{
       border-radius: 10px; 
       border: none;
       padding: 3px;
+    }
+
+    /* Botão Login/Cadastro Mobile */
+    .login-cadastro{
+      display: none;
+    }
+
+    .login-cadastro-mobile{
+      display: grid;
+      gap: 7px;
+      margin-top: 7px;
+    }
+
+    .login-cadastro-mobile a{
+      border-radius: 17px;
+      border: solid 2px var(--branco);
+      background-color: var(--azulheader);
+      padding: 5px;
+      padding-right: 10px;
+      box-shadow: 0px 0px 2px var(--azulheader);
+      text-decoration: none;
+      color: var(--branco);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2px;
+    }
+
+    .login-cadastro-mobile a:hover{
+      background-color: var(--azulnav);
+      transition: background-color 0.4s ease, color 0.4s ease, transform 0.4s ease;
     }
   }

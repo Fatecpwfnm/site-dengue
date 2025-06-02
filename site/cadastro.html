@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Inicio - Prefeitura de Lins</title>
+  <title>Login - Prefeitura de Lins</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet">
   <link href="styles/styles.css" rel="stylesheet">
-  <link href="styles/inicio.css" rel="stylesheet">
+  <link href="styles/cadastro.css" rel="stylesheet">
 </head>
 <body>
 
@@ -55,8 +55,9 @@
     </div>
 </header>
 
-  <!-- Menu Desktop -->
-  <nav>
+
+<nav>
+    <!-- Menu Desktop -->
     <a href="#">Início</a>
     <a href="#">Realizar Denúncia</a>
     <a href="#">Andamento da Denúncia</a>
@@ -64,38 +65,38 @@
 
     <!-- Barra de Pesquisa Mobile -->
     <div class="pesquisa-mobile">
-    <input type="text" placeholder="Buscar...">
-    <span class="material-icons" style="vertical-align: middle;">search</span>
+        <input type="text" placeholder="Buscar...">
+        <span class="material-icons" style="vertical-align: middle;">search</span>
     </div>
-  </nav>
+</nav>
 
 <!-- Conteúdo -->
 <main>
-  <div class="container-texto">
-    <h2>COMO FUNCIONA</h2>
-    <p>
-      Você pode reportar, anonimamente ou não, locais com possível foco de dengue, como água parada em lugares abandonados. 
-      A Secretária de Saúde irá enviar agentes para inspecionar o local designado e tomar as devidas providências.
-      Durante o processo, você poderá ver o status da denúncia, podendo variar entre: denúncia realizada, em inspeção, concluída e cancelada. 
-    </p>
+    <div class="container-login">
+        <form>
+            <h2>CADASTRO</h2>
+    
+            <label>E-mail</label>
+            <input type="text" required>
+
+            <label>CPF</label>
+            <input type="text" required>
+
+            <label>Data de Nascimmento</label>
+            <input type="date" required>
+
+            <label>Telefone/Celular</label>
+            <input type="tel" required>
+    
+            <label>Senha</label>
+            <input type="password" required>
+            
+            <label>Confirmar Senha</label>
+            <input type="password" required>
+                     
+            <button type="submit">Cadastrar</button>
+        </form>
     </div>
-
-    <div class="container-texto">
-    <h2>OBJETIVO</h2>
-    <p>
-      Esse sistema visa facilitar o combate à dengue, 
-      permitindo que a população participe ativamente da identificação e eliminação de focos do mosquito transmissor.
-    </p>
-  </div>
-
-  <div class="container-texto">
-    <h2>ÓRGÃO RESPONSÁVEL</h2>
-    <p>
-      Secretaria Municipal de Saúde (SMS) 
-    </p>
-  </div>
-
-  
 </main>
 
 <!-- Footer -->
