@@ -11,6 +11,10 @@ body{
   background-color: var(--branco);
 }
 
+.pagina{
+  text-decoration: underline;
+}
+
 /* Footer */
 footer{
   display: flex;
@@ -94,12 +98,15 @@ header{
       color: var(--branco);
       display: inline;
       align-items: center;
-      gap: 2px;
     }
-
+    
     .login-cadastro a:hover{
       background-color: var(--azulbotaohover);
       transition: background-color 0.4s ease, color 0.4s ease, transform 0.4s ease;
+    }
+
+    .login-cadastro a span{
+      margin-right: 3px;
     }
   }
 
@@ -115,9 +122,10 @@ header{
   }
   nav a{
     padding: 10px;
+    font-size: 20px;
     text-decoration: none;
+    font-weight: 200;
     color: var(--branco);
-    font-size: larger;
   }
 
   nav a:hover{
@@ -235,7 +243,10 @@ header{
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 2px;
+    }
+
+    .login-cadastro-mobile a:first-child{
+      gap: 3px;
     }
 
     .login-cadastro-mobile a:hover{

@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Login - Prefeitura de Lins</title>
+  <title>Contato - Prefeitura de Lins</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet">
   <link href="styles/styles.css" rel="stylesheet">
-  <link href="styles/login.css" rel="stylesheet">
+  <link href="styles/contato.css" rel="stylesheet">
 </head>
 <body>
 
@@ -55,12 +55,13 @@
     </div>
 </header>
 
+
 <nav>
     <!-- Menu Desktop -->
     <a href="index.html">Início</a>
     <a href="denuncia.html">Realizar Denúncia</a>
     <a href="andamento.html">Andamento da Denúncia</a>
-    <a href="contato.html">Contato</a>
+    <a href="contato.html" class="pagina">Contato</a>
 
     <!-- Barra de Pesquisa Mobile -->
     <div class="pesquisa-mobile">
@@ -73,17 +74,27 @@
 <main>
     <div class="container-login">
         <form>
-            <h2>LOGIN</h2>
+            <h2>CONTATO</h2>
     
-            <label>E-mail ou CPF</label>
+            <label>Nome</label>
             <input type="text" required>
     
-            <label>Senha</label>
-            <input type="password" required>
+            <label>E-mail</label>
+            <input type="text" required>
             
-            <p>Não possui cadastro? <a href="#">Cadastre-se</a></p>
+            <label>Mensagem</label>
+            <textarea maxlength="800" required></textarea>
+
+            <div class="container-contato">
+                <h3>Informações de Contato</h3>
+                <div class="linha"></div>
+                <h4>Secretaria Municipal da Saúde</h4>
+                <p>Endereço: <span>Rua da Saúde, 123</span></p>
+                <p>Telefone: <span>(11) 1234-5678</span></p>
+                <p>Contato: <span>contato@saude.gov.br</span></p>
+            </div>
                      
-            <button type="submit">Entrar</button>
+            <button type="submit">Enviar</button>
         </form>
     </div>
 </main>

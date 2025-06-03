@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Andamento da Denúncia - Prefeitura de Lins</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet">
+  <link href="styles/styles.css" rel="stylesheet">
+  <link href="styles/andamento.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+
+  <!-- Logo -->
+  <div class="logo">
+    <a href="index.html"><img src="img/logo.png" height="86" width="95"></a>
+    <img src="img/preflins.png" height="41" width="104">
+  </div>
+
+  <!-- Barra de Pesquisa Desktop-->
+  <div class="pesquisa">
+    <input type="text" placeholder="Buscar...">
+    <span class="material-icons" style="vertical-align: middle;">search</span>
+  </div>
+
+  <!-- Menu Mobile -->
+  <input type="checkbox" id="menu-toggle" />
+  <label for="menu-toggle" class="menu-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+
+  <div class="menu-mobile">
+    <a href="index.html">Início</a>
+    <a href="denuncia.html">Realizar Denúncia</a>
+    <a href="andamento.html">Andamento da Denúncia</a>
+    <a href="contato.html">Contato</a>
+    <!-- Botão Login/Cadastro Mobile -->
+    <div class="login-cadastro-mobile">
+      <a href="login.html"><span class="material-icons" style="vertical-align: -6px">login</span>LOGIN</a>
+      <a href="cadastro.html"><span class="material-icons" style="vertical-align: -6px">person</span>CADASTRO</a>
+    </div>
+  </div>
+
+  <!-- Botão Login/Cadastro Desktop -->
+    <div class="login-cadastro">
+      <a href="login.html"><span class="material-icons" style="vertical-align: -6px">login</span>LOGIN</a>
+      <a href="cadastro.html"><span class="material-icons" style="vertical-align: -6px">person</span>CADASTRO</a>
+    </div>
+</header>
+
+
+<nav>
+    <!-- Menu Desktop -->
+    <a href="index.html">Início</a>
+    <a href="denuncia.html">Realizar Denúncia</a>
+    <a href="andamento.html" class="pagina">Andamento da Denúncia</a>
+    <a href="contato.html">Contato</a>
+
+    <!-- Barra de Pesquisa Mobile -->
+    <div class="pesquisa-mobile">
+        <input type="text" placeholder="Buscar...">
+        <span class="material-icons" style="vertical-align: middle;">search</span>
+    </div>
+</nav>
+
+<!-- Conteúdo -->
+<main>
+    <div class="container-denuncia">
+        <form>
+            <div class="container-andamento">
+                <h2>ANDAMENTO DA DENÚNCIA</h2>
+
+                <div class="container-andamento-denuncia">
+                    <h3>Água acumulada em pneus</h3>
+                    <div class="linha"></div>
+
+                    <p>Data: <span>01/02/25</span></p>
+                    <p>Localização: <span>Av. Duque de Caxias, Centro</span></p>                    
+                    <p>Status: <span class="status-analise">Denúncia em Análise</span></p>
+
+                    <div class="linha"></div>
+
+                    <p>Descrição: <span>
+                        Há acúmulo de água parada em pneus expostos ao ar livre na Av. Duque de Caxias, Centro, 
+                        o que pode servir como criadouro do mosquito da dengue. 
+                        A situação persiste há dias, sem nenhuma medida de controle. 
+                        Solicito vistoria e providências urgentes para eliminação do foco.</span></p>
+                </div>
+
+                <div class="container-andamento-denuncia">
+                    <h3>Água acumulada em buraco de rua</h3>
+                    <div class="linha"></div>
+
+                    <p>Data: <span>01/02/25</span></p>
+                    <p>Localização: <span>Rua Glicério, Vila São José</span></p>                    
+                    <p>Status: <span class="status-inspecao">Em Inspeção</span></p>
+
+                    <div class="linha"></div>
+
+                    <p>Descrição: <span>
+                        Buracos na Rua Glicério, Vila São José estão acumulando água parada, com risco de foco de dengue. 
+                        Solicito vistoria e reparo da via.</span></p>
+                </div>
+
+                <div class="container-andamento-denuncia">
+                    <h3>Piscina sem manutenção</h3>
+                    <div class="linha"></div>
+
+                    <p>Data: <span>01/02/25</span></p>
+                    <p>Localização: <span>Rua Bahia, Rebouças</span></p>                    
+                    <p>Status: <span class="status-concluido">Concluído</span></p>
+
+                    <div class="linha"></div>
+
+                    <p>Descrição: <span>
+                        Piscina sem manutenção na Rua Bahia, Bairro Rebouças, com água parada e suja, representando risco de criadouro do mosquito da dengue. 
+                        Solicito vistoria e providências urgentes.</span></p>
+                </div>
+
+            </div>
+
+        </form>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer>
+  <div class="logo-footer">
+    <img src="img/footlogo.png" height="59" width="65">
+    <img src="img/preflins.png" height="36" width="91">
+  </div>
+  <p>&copy; 2025 - Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>

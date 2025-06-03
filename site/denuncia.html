@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Login - Prefeitura de Lins</title>
+  <title>Realizar Denúncia - Prefeitura de Lins</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet">
   <link href="styles/styles.css" rel="stylesheet">
-  <link href="styles/login.css" rel="stylesheet">
+  <link href="styles/denuncia.css" rel="stylesheet">
 </head>
 <body>
 
@@ -55,10 +55,11 @@
     </div>
 </header>
 
+
 <nav>
     <!-- Menu Desktop -->
     <a href="index.html">Início</a>
-    <a href="denuncia.html">Realizar Denúncia</a>
+    <a href="denuncia.html" class="pagina">Realizar Denúncia</a>
     <a href="andamento.html">Andamento da Denúncia</a>
     <a href="contato.html">Contato</a>
 
@@ -71,19 +72,32 @@
 
 <!-- Conteúdo -->
 <main>
-    <div class="container-login">
+    <div class="container-denuncia">
         <form>
-            <h2>LOGIN</h2>
+            <h2>REALIZE SUA DENÚNCIA</h2>
     
-            <label>E-mail ou CPF</label>
-            <input type="text" required>
-    
-            <label>Senha</label>
-            <input type="password" required>
-            
-            <p>Não possui cadastro? <a href="#">Cadastre-se</a></p>
-                     
-            <button type="submit">Entrar</button>
+            <label>Tópico da Denúncia</label>
+            <input type="text" placeholder="Exemplo: Água acumulada em terreno baldio." required>
+
+            <label>Descrição do Caso </label>
+            <textarea name="descricao" maxlength="800" placeholder="Exemplo: Buracos na Rua Glicério, Vila São José estão acumulando água parada, com risco de foco de dengue." required></textarea>
+
+            <label>Localização do Foco</label>
+            <input type="text" class="denuncia" placeholder="Endereço" required>
+
+            <label>Contato (opcional)</label>
+            <input type="text" class="denuncia" placeholder="Celular ou Telefone">
+ 
+            <label>Fotos (opcional)</label>
+            <input type="file">
+
+            <label>Deseja fazer a denúncia anonimamente?</label>
+            <div >
+            <label class="anonimo"><input type="radio" name="anonimo">Sim</label>
+            <label class="anonimo"><input type="radio" name="anonimo">Não</label>
+            </div>
+
+            <button type="submit">Enviar Denúncia</button>
         </form>
     </div>
 </main>

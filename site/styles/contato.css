@@ -37,13 +37,24 @@ main{
     word-spacing: 3px;
 }
 
-input[type="text"], input[type="email"], input[type="password"]{
+input[type="text"], input[type="email"], input[type="password"], input[type="date"], input[type="tel"]{
     border-radius: 5px; 
     border: 1px solid #535353;
     padding: 5px;
     display: flex;
     justify-self: left;
     width: 190px;
+}
+
+textarea{
+    border-radius: 5px; 
+    border: 1px solid #535353;
+    padding: 5px;
+    display: flex;
+    justify-self: left;
+    resize: none;
+    width: 190px;
+    height: 100px;
 }
 
 .container-login button[type="submit"]{
@@ -71,16 +82,36 @@ input[type="text"], input[type="email"], input[type="password"]{
     transition: background-color 0.4s ease, color 0.4s ease, transform 0.4s ease;
 }
 
-p{
-    display: flex;
-    justify-content: center;
-    margin: 5px;
-    font-size: x-small;
-    word-spacing: 2px;
+.container-contato{
+    font-size: small;
+    border: 1px solid var(--cinza);
+    border-radius: 15px;
+    box-shadow: 0 0 3px var(--brancosombra);
+    padding: 15px 10px;
+    margin-top: 20px;
+    
 }
 
-p a{
-    color: var(--azulbotao);
-    margin-left: 3px;
-    text-decoration: underline;
+.container-contato p{
+    margin: 2px 0px;
+    word-spacing: 2px;
+    color: var(--cinza);
+}
+
+.container-contato span{
+    color: var(--preto);
+}
+
+h3{
+    text-align: center;
+}
+
+h4{
+    text-align: center;
+    text-decoration: none;
+}
+
+.linha{
+    border-top: 1px solid var(--cinza);
+    margin: 5px 0;
 }

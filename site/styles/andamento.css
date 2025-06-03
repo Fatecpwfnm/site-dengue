@@ -1,0 +1,88 @@
+@import url('cores.css');
+
+main{
+    margin: 75px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+}
+
+.container-andamento{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 40px 60px;
+    border-radius: 15px;
+    background-color: var(--brancocontainer);
+    box-shadow: 0 0 5px var(--brancosombra);
+    flex-direction: column;
+}
+
+.container-andamento h2{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    text-align: center;
+    word-spacing: 4px;
+    letter-spacing: 2px;
+    font-size: 32px;
+    margin-bottom: 17px;
+}
+
+.container-andamento-denuncia{
+    background-color: var(--brancocontainer2);
+    border-radius: 15px;
+    box-shadow: 0 0 5px var(--brancosombra);
+    padding: 13px;
+    margin-bottom: 20px;
+}
+
+h3{
+    word-spacing: 3px;
+}
+
+.linha{
+    border-top: 2px solid var(--cinza);
+    margin: 5px 0;
+}
+
+.container-andamento-denuncia p{
+    color: var(--cinza);
+    margin: 7px 1px;
+}
+
+.container-andamento-denuncia span{
+    color: var(--preto);
+    margin-left: 2px;
+    word-spacing: 2px;
+}
+
+.status-analise{
+    color: var(--azulheader);
+}
+.status-inspecao{
+    color: var(--azulbotao);
+}
+.status-concluido{
+    color: var(--verde);
+}
+.status-cancelado{
+    color: var(--vermelho);
+}
+
+@media screen and (max-width: 540px){
+    main{
+        margin: 20px;
+    }
+
+    .container-andamento{
+        padding: 25px 25px;
+    }
+
+    .container-andamento-denuncia{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
