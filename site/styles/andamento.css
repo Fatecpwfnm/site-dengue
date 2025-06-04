@@ -1,7 +1,7 @@
 @import url('cores.css');
 
 main{
-    margin: 75px;
+    margin: 150px;
     margin-top: 60px;
     margin-bottom: 60px;
     color: #000000;
@@ -37,6 +37,7 @@ main{
     box-shadow: 0 0 5px var(--brancosombra);
     padding: 13px;
     margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 h3{
@@ -49,14 +50,16 @@ h3{
 }
 
 .container-andamento-denuncia p{
-    color: var(--cinza);
     margin: 7px 1px;
 }
 
-.container-andamento-denuncia span{
-    color: var(--preto);
+.container-andamento-denuncia p span{
     margin-left: 2px;
     word-spacing: 2px;
+}
+
+.informacao{
+    color: var(--cinza);
 }
 
 .status-analise{
@@ -72,7 +75,7 @@ h3{
     color: var(--vermelho);
 }
 
-@media screen and (max-width: 540px){
+@media screen and (max-width: 768px){
     main{
         margin: 20px;
     }

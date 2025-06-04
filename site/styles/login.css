@@ -7,6 +7,7 @@ main{
     color: #000000;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .container-login{
@@ -43,7 +44,7 @@ input[type="text"], input[type="email"], input[type="password"]{
     padding: 5px;
     display: flex;
     justify-self: left;
-    width: 190px;
+    width: 100%;
 }
 
 .container-login button[type="submit"]{
@@ -71,16 +72,24 @@ input[type="text"], input[type="email"], input[type="password"]{
     transition: background-color 0.4s ease, color 0.4s ease, transform 0.4s ease;
 }
 
-p{
-    display: flex;
-    justify-content: center;
-    margin: 5px;
-    font-size: x-small;
-    word-spacing: 2px;
-}
-
-p a{
+.cadastre-se a{
     color: var(--azulbotao);
     margin-left: 3px;
     text-decoration: underline;
+}
+
+.cadastre-se{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: x-small;
+    margin-top: 2px;
+}
+
+@media screen and (max-width: 768px){
+    main{
+        margin: 20px;
+        flex: 1;
+    }
 }
