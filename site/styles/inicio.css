@@ -31,6 +31,26 @@ main{
     color: #3c3c3c;
 }
 
+.container-texto ul{
+    list-style-position: outside;
+    list-style: disc;
+    margin-left: 0;
+    padding-left: 16px;
+}
+
+.container-texto li{
+    font-size: 20px;
+    word-spacing: 6px;
+    color: #3c3c3c;
+    margin-bottom: 6px;
+}
+
+.container-texto a{
+    text-decoration: none;
+    text-decoration: underline;
+    color: var(--azulheader);
+}
+
 @media screen and (max-width: 768px) {
     main{
         margin: 10px;
@@ -49,6 +69,11 @@ main{
 
     .container-texto p{
         font-size: 17px;
+    }
+
+    .container-texto li{
+        font-size: 17px;
+        margin-bottom: 10px;
     }
 
 }
